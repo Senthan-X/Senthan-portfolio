@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Senthan & Co — an independent studio creating polished, responsive HTML website templates.">
-<meta name="theme-color" content="#111">
-<title>Senthan & Co — Web Templates</title>
+<meta name="description" content="Senthan &amp; Co — an independent studio creating polished, responsive HTML website templates.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3f1eb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11110f" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://senthan.work/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23171717'/%3E%3Ctext x='50' y='69' font-family='Arial,Helvetica,sans-serif' font-size='56' font-weight='800' fill='%23f3f1eb' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Senthan &amp; Co — Web Templates">
+<meta property="og:description" content="Independent digital studio creating polished, responsive HTML website templates.">
+<meta property="og:url" content="https://senthan.work/">
+<meta name="twitter:card" content="summary">
+<title>Senthan &amp; Co — Web Templates</title>
 <style>
 :root{--bg:#f3f1eb;--fg:#171717;--muted:#706d65;--line:#d7d3c9;--panel:#e8e5dd} @media(prefers-color-scheme:dark){:root{--bg:#11110f;--fg:#f2efe8;--muted:#aaa69d;--line:#34332f;--panel:#1b1a17}} :root[data-theme=light]{--bg:#f3f1eb;--fg:#171717;--muted:#706d65;--line:#d7d3c9;--panel:#e8e5dd}:root[data-theme=dark]{--bg:#11110f;--fg:#f2efe8;--muted:#aaa69d;--line:#34332f;--panel:#1b1a17}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}.wrap{width:min(1240px,calc(100% - 40px));margin:auto}.top{border-bottom:1px solid var(--line);padding:18px 0}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:15px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.links{display:flex;gap:25px;font-size:12px;color:var(--muted)}.links a:hover{color:var(--fg)}.theme{border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:11px}
@@ -14,13 +23,13 @@
 .statement{display:grid;grid-template-columns:1fr 1fr;gap:65px}.statement>p{font-size:clamp(32px,4vw,55px);line-height:1.02;letter-spacing:-.045em;margin:0}.principles{border-top:1px solid var(--line)}.principle{display:grid;grid-template-columns:55px 1fr;gap:15px;padding:18px 0;border-bottom:1px solid var(--line)}.principle b{font-size:10px}.principle span{font-size:13px;color:var(--muted)}footer{padding:35px 0 55px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:11px}footer strong{color:var(--fg)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}@media(max-width:760px){.wrap{width:min(100% - 28px,1240px)}.links{display:none}.hero{min-height:72vh;padding:70px 0 50px}.hero-bottom,.statement{grid-template-columns:1fr;gap:28px}.hero-bottom p{font-size:18px}.section{padding:70px 0}.head{display:block}.head .note{margin-top:18px}.feature-grid,.collection{grid-template-columns:1fr}.card{min-height:400px}.art{min-height:275px}footer{display:block}footer div+div{margin-top:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.card{transition:none}}
 </style></head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="#top">Senthan & Co</a><nav class="links" aria-label="Primary"><a href="#work">Work</a><a href="#collection">Collection</a><a href="#studio">Studio</a></nav><button class="theme" id="theme" type="button">Theme</button></div></header>
-<main id="top">
+<header class="top" id="top"><div class="wrap nav"><a class="brand" href="#top">Senthan &amp; Co</a><nav class="links" aria-label="Primary"><a href="#work">Work</a><a href="#collection">Collection</a><a href="#studio">Studio</a><a href="#contact">Contact</a></nav><button class="theme" id="theme" type="button">Theme</button></div></header>
+<main>
 <section class="hero wrap reveal"><div><p class="eyebrow">Independent digital studio · HTML templates</p><h1>Websites built to look finished.</h1><div class="hero-bottom"><div><p>Purpose-built, responsive website templates for businesses and brands that need more than a placeholder.</p><a class="cta" href="#work">Explore selected work</a></div><div class="note">Art direction, usable structure, performance and straightforward deployment — treated as one system.</div></div></div></section>
 <section class="section" id="work"><div class="wrap"><div class="head"><h2 class="title">Selected work</h2><div class="note">The fashion collection leads the visual portfolio. Practical business templates form the wider library.</div></div><div class="feature-grid">
-<article class="card reveal"><div class="art maison" aria-hidden="true"></div><div class="label"><small>01 · Boutique & Fashion</small><h3>Maison</h3><p>Editorial fashion commerce with a distinct magazine-led identity.</p></div></article>
-<article class="card reveal"><div class="art atelier" aria-hidden="true"></div><div class="label"><small>02 · Boutique & Fashion</small><h3>Atelier</h3><p>A refined luxury direction built around product and studio imagery.</p></div></article>
-<article class="card reveal"><div class="art eclat" aria-hidden="true"></div><div class="label"><small>03 · Boutique & Fashion</small><h3>ÉCLAT</h3><p>Contemporary fashion presentation with a catalogue-first approach.</p></div></article>
+<article class="card reveal"><div class="art maison" aria-hidden="true"></div><div class="label"><small>01 · Boutique &amp; Fashion</small><h3>Maison</h3><p>Editorial fashion commerce with a distinct magazine-led identity.</p></div></article>
+<article class="card reveal"><div class="art atelier" aria-hidden="true"></div><div class="label"><small>02 · Boutique &amp; Fashion</small><h3>Atelier</h3><p>A refined luxury direction built around product and studio imagery.</p></div></article>
+<article class="card reveal"><div class="art eclat" aria-hidden="true"></div><div class="label"><small>03 · Boutique &amp; Fashion</small><h3>ÉCLAT</h3><p>Contemporary fashion presentation with a catalogue-first approach.</p></div></article>
 </div></div></section>
 <section class="section" id="collection"><div class="wrap"><div class="head"><h2 class="title">The collection</h2><div class="note">Production-minded templates across service, retail and lifestyle categories.</div></div><div class="collection">
 <a class="reveal" href="https://github.com/Senthan-X/senthan-fitness-templates" target="_blank" rel="noopener"><span class="num">04</span><span><h3>Fitness / Gym</h3><p>Training, membership and studio presentation.</p></span><span class="arrow">↗</span></a>
@@ -29,6 +38,7 @@
 <a class="reveal" href="#studio"><span class="num">07</span><span><h3>More categories</h3><p>Medical, real estate, automotive, events, photography and more.</p></span><span class="arrow">→</span></a>
 </div></div></section>
 <section class="section" id="studio"><div class="wrap"><div class="statement"><p class="reveal">One studio. Distinct visual systems. Clean code underneath.</p><div class="principles"><div class="principle reveal"><b>01</b><span>Zero-dependency architecture designed for simple static hosting.</span></div><div class="principle reveal"><b>02</b><span>Responsive layouts with accessible structure and restrained motion.</span></div><div class="principle reveal"><b>03</b><span>Light and dark presentation, purposeful interaction and polished details.</span></div><div class="principle reveal"><b>04</b><span>Built to be edited, deployed and improved rather than treated as a throwaway demo.</span></div></div></div></div></section>
-</main><footer class="wrap"><div><strong>Senthan & Co</strong> · Web templates</div><div>Built for the web · 2026</div></footer>
+<section class="section" id="contact"><div class="wrap"><div class="statement"><p class="reveal">Have a project in mind? Let's build it properly.</p><div class="principles"><div class="principle reveal"><b>→</b><span>Email — <a href="mailto:jonathanrivers0414@gmail.com">jonathanrivers0414@gmail.com</a></span></div><div class="principle reveal"><b>→</b><span>GitHub — <a href="https://github.com/Senthan-X" target="_blank" rel="noopener">github.com/Senthan-X</a></span></div></div></div></div></section>
+</main><footer class="wrap"><div><strong>Senthan &amp; Co</strong> · Web templates</div><div>Built for the web · 2026</div></footer>
 <script>(function(){var r=document.documentElement,k='senthan-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}if(s==='light'||s==='dark')r.dataset.theme=s;document.getElementById('theme').onclick=function(){var c=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),n=c==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem(k,n)}catch(e){}};var els=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else els.forEach(function(e){e.classList.add('in')})})();</script>
 </body></html>
