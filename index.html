@@ -22,7 +22,7 @@
     />
     <meta
       property="og:description"
-      content="Explore seven live template collection gateways spanning commerce, property, healthcare, fitness, hospitality, legal and grooming."
+      content="Explore eight live template collection gateways spanning commerce, property, healthcare, fitness, hospitality, legal, grooming and automotive."
     />
     <meta property="og:url" content="https://senthan.work/" />
     <meta
@@ -40,7 +40,7 @@
     />
     <meta
       name="twitter:description"
-      content="Seven live template collections, one full-stack practice."
+      content="Eight live template collections, one full-stack practice."
     />
     <meta
       name="twitter:image"
@@ -824,6 +824,13 @@
                 Grooming</button
               ><button
                 class="filter"
+                data-filter="auto"
+                data-i18n="filterAuto"
+              >
+                Auto &amp; Mobility
+              </button
+              ><button
+                class="filter"
                 data-filter="pipeline"
                 data-i18n="filterPipeline"
               >
@@ -1026,9 +1033,8 @@
           k: "Property / Real Estate",
           t: "Real Estate",
           d: "A growing multipurpose collection spanning agencies, rentals, marketplaces, developments and destination property.",
-          liveCount: 5,
-          developmentCount: 3,
-          statusKey: "expandingLabel",
+          count: 11,
+          statusKey: "readyLabel",
           p: [
             [
               "Real Estate Collection",
@@ -1042,14 +1048,14 @@
           n: "03",
           sector: "health",
           k: "Healthcare / Wellness",
-          t: "Vitalis Collection",
-          d: "Vitalis brings together family medicine, general dentistry, pediatric dental care, cosmetic dentistry and orthodontics.",
-          count: 5,
+          t: "Afya Atlas Collection",
+          d: "Afya Atlas brings together family medicine, general dentistry, pediatric dental care, cosmetic dentistry and orthodontics.",
+          count: 11,
           statusKey: "readyLabel",
           p: [
             [
-              "Vitalis Collection",
-              "Explore the Medicare & Wellness collection",
+              "Afya Atlas Collection",
+              "Explore the Afya Atlas collection",
               "https://senthan-x.github.io/medicare-and-wellness/",
               "Collection",
             ],
@@ -1112,9 +1118,8 @@
           k: "Grooming / Hair",
           t: "Barbershop & Hair",
           d: "A grooming collection covering classic barbering, modern studios, fades, braids, color and community-led concepts.",
-          liveCount: 6,
-          developmentCount: 1,
-          statusKey: "expandingLabel",
+          count: 7,
+          statusKey: "readyLabel",
           p: [
             [
               "Barbershop & Hair Collection",
@@ -1126,6 +1131,21 @@
         },
         {
           n: "08",
+          sector: "auto",
+          k: "Automotive / Mobility",
+          t: "Auto Repair & Detailing",
+          d: "A multipurpose collection for repair, detailing, diagnostics and everyday vehicle care.",
+          count: 8,
+          statusKey: "readyLabel",
+          p: [[
+            "Auto Repair & Detailing Collection",
+            "Explore the complete auto care collection",
+            "https://senthan-x.github.io/auto-repair-and-detailing/",
+            "Collection",
+          ]],
+        },
+        {
+          n: "09",
           sector: "pipeline",
           k: "Portfolio Pipeline",
           t: "Next Collections",
@@ -1270,6 +1290,7 @@
           filterFitness: "Fitness",
           filterLegal: "Legal",
           filterGrooming: "Grooming",
+          filterAuto: "Auto & Mobility",
           filterPipeline: "In development",
           practiceTitle: "A premium system.<br>Applied consistently.",
           quote: "“Strategy first. Craft throughout. No borrowed personality.”",
@@ -1355,6 +1376,7 @@
           filterFitness: "Fitness",
           filterLegal: "Juridique",
           filterGrooming: "Grooming",
+          filterAuto: "Auto & Mobilité",
           filterPipeline: "En développement",
           practiceTitle: "Un système premium.<br>Appliqué avec cohérence.",
           quote:
@@ -1441,6 +1463,7 @@
           filterFitness: "Fitness",
           filterLegal: "Legal",
           filterGrooming: "Grooming",
+          filterAuto: "Auto y Movilidad",
           filterPipeline: "En desarrollo",
           practiceTitle: "Un sistema premium.<br>Aplicado con coherencia.",
           quote: "«Estrategia primero. Cuidado en todo. Personalidad propia.»",
@@ -1526,6 +1549,7 @@
           filterFitness: "Fitness",
           filterLegal: "Recht",
           filterGrooming: "Pflege",
+          filterAuto: "Auto & Mobilität",
           filterPipeline: "In Entwicklung",
           practiceTitle: "Ein Premium-System.<br>Konsequent angewandt.",
           quote: "„Strategie zuerst. Sorgfalt überall. Eigene Persönlichkeit.“",
@@ -1610,6 +1634,7 @@
           filterFitness: "Fitness",
           filterLegal: "Jurídico",
           filterGrooming: "Cuidados",
+          filterAuto: "Automóveis e Mobilidade",
           filterPipeline: "Em desenvolvimento",
           practiceTitle: "Um sistema premium.<br>Aplicado com consistência.",
           quote:
@@ -1696,6 +1721,7 @@
           filterFitness: "Mazoezi",
           filterLegal: "Sheria",
           filterGrooming: "Urembo",
+          filterAuto: "Magari na Usafiri",
           filterPipeline: "Inaendelezwa",
           practiceTitle: "Mfumo wa kiwango cha juu.<br>Ukitumika kwa uthabiti.",
           quote: "“Mkakati kwanza. Ufundi kila hatua. Utambulisho wa kipekee.”",
@@ -1780,6 +1806,7 @@
           filterFitness: "اللياقة",
           filterLegal: "القانون",
           filterGrooming: "العناية",
+          filterAuto: "السيارات والتنقل",
           filterPipeline: "قيد التطوير",
           practiceTitle: "نظام متميز.<br>يُطبّق باتساق.",
           quote: "«الاستراتيجية أولاً، والحرفية في كل خطوة، وهوية أصيلة.»",
@@ -1860,6 +1887,7 @@
           filterFitness: "健身",
           filterLegal: "法律",
           filterGrooming: "护理",
+          filterAuto: "汽车与出行",
           filterPipeline: "开发中",
           practiceTitle: "高端系统。<br>始终一致。",
           quote: "“战略先行，匠心贯穿，保持独特。”",
@@ -1930,9 +1958,9 @@
           },
           health: {
             k: "Healthcare / Wellness",
-            d: "Vitalis brings together family medicine, general dentistry, pediatric dental care, cosmetic dentistry and orthodontics.",
-            t: "Vitalis Collection",
-            linkNames: ["Vitalis Collection"],
+            d: "Afya Atlas brings together family medicine, general dentistry, pediatric dental care, cosmetic dentistry and orthodontics.",
+            t: "Afya Atlas Collection",
+            linkNames: ["Afya Atlas Collection"],
           },
           fitness: {
             k: "Fitness / Performance",
@@ -1958,12 +1986,16 @@
             t: "Barbershop & Hair",
             linkNames: ["Barbershop & Hair Collection"],
           },
+          auto: {
+            k: "Automotive / Mobility",
+            d: "Vehicle care concepts for repair, detailing, diagnostics and everyday ownership.",
+            t: "Auto Repair & Detailing",
+            linkNames: ["Auto Repair & Detailing Collection"],
+          },
           pipeline: {
             k: "Portfolio Pipeline",
             d: "Reserved production tracks for the next multipurpose collection families.",
             names: [
-              "Auto & Mobility",
-              "Events & Weddings",
               "Photography Studios",
               "Veterinary & Pet Care",
               "Spa & Wellness",
@@ -1987,9 +2019,9 @@
           },
           health: {
             k: "Santé / Bien-être",
-            d: "Vitalis réunit médecine familiale, dentisterie générale, soins dentaires pédiatriques, dentisterie esthétique et orthodontie.",
-            t: "Collection Vitalis",
-            linkNames: ["Collection Vitalis"],
+            d: "Afya Atlas réunit médecine familiale, dentisterie générale, soins dentaires pédiatriques, dentisterie esthétique et orthodontie.",
+            t: "Collection Afya Atlas",
+            linkNames: ["Collection Afya Atlas"],
           },
           fitness: {
             k: "Fitness / Performance",
@@ -2015,11 +2047,16 @@
             t: "Barbier & Coiffure",
             linkNames: ["Collection Barbier & Coiffure"],
           },
+          auto: {
+            k: "Automobile / Mobilité",
+            d: "Des expériences pour la réparation, le detailing, le diagnostic et l’entretien automobile.",
+            t: "Auto & Réparation",
+            linkNames: ["Collection Auto & Réparation"],
+          },
           pipeline: {
             k: "Pipeline du portfolio",
             d: "Axes réservés aux prochaines familles de collections polyvalentes.",
             names: [
-              "Auto & Mobilité",
               "Événements & Mariages",
               "Studios photo",
               "Vétérinaire & Animaux",
@@ -2044,9 +2081,9 @@
           },
           health: {
             k: "Salud / Bienestar",
-            d: "Vitalis reúne medicina familiar, odontología general, atención dental pediátrica, odontología estética y ortodoncia.",
-            t: "Colección Vitalis",
-            linkNames: ["Colección Vitalis"],
+            d: "Afya Atlas reúne medicina familiar, odontología general, atención dental pediátrica, odontología estética y ortodoncia.",
+            t: "Colección Afya Atlas",
+            linkNames: ["Colección Afya Atlas"],
           },
           fitness: {
             k: "Fitness / Rendimiento",
@@ -2072,11 +2109,16 @@
             t: "Barbería y Cabello",
             linkNames: ["Colección Barbería y Cabello"],
           },
+          auto: {
+            k: "Automoción / Movilidad",
+            d: "Experiencias para reparación, detailing, diagnóstico y cuidado cotidiano del vehículo.",
+            t: "Auto y Detallado",
+            linkNames: ["Colección de Auto y Detallado"],
+          },
           pipeline: {
             k: "Próximas colecciones",
             d: "Líneas reservadas para las próximas familias multipropósito.",
             names: [
-              "Auto y Movilidad",
               "Eventos y Bodas",
               "Estudios Fotográficos",
               "Veterinaria y Mascotas",
@@ -2101,9 +2143,9 @@
           },
           health: {
             k: "Gesundheit / Wellness",
-            d: "Vitalis vereint Familienmedizin, allgemeine Zahnmedizin, Kinderzahnheilkunde, ästhetische Zahnmedizin und Kieferorthopädie.",
-            t: "Vitalis-Sammlung",
-            linkNames: ["Vitalis-Sammlung"],
+            d: "Afya Atlas vereint Familienmedizin, allgemeine Zahnmedizin, Kinderzahnheilkunde, ästhetische Zahnmedizin und Kieferorthopädie.",
+            t: "Afya Atlas-Sammlung",
+            linkNames: ["Afya Atlas-Sammlung"],
           },
           fitness: {
             k: "Fitness / Leistung",
@@ -2129,11 +2171,16 @@
             t: "Barbershop & Haar",
             linkNames: ["Barbershop-&-Haar-Sammlung"],
           },
+          auto: {
+            k: "Auto / Mobilität",
+            d: "Auftritte für Reparatur, Fahrzeugpflege, Diagnose und den täglichen Fahrzeugbesitz.",
+            t: "Auto & Fahrzeugpflege",
+            linkNames: ["Auto-&-Fahrzeugpflege-Sammlung"],
+          },
           pipeline: {
             k: "Portfolio-Pipeline",
             d: "Reservierte Produktionslinien für kommende Mehrzweck-Sammlungen.",
             names: [
-              "Auto & Mobilität",
               "Events & Hochzeiten",
               "Fotostudios",
               "Tiermedizin & Haustiere",
@@ -2158,9 +2205,9 @@
           },
           health: {
             k: "Saúde / Bem-estar",
-            d: "Vitalis reúne medicina familiar, odontologia geral, atendimento odontológico pediátrico, odontologia estética e ortodontia.",
-            t: "Coleção Vitalis",
-            linkNames: ["Coleção Vitalis"],
+            d: "Afya Atlas reúne medicina familiar, odontologia geral, atendimento odontológico pediátrico, odontologia estética e ortodontia.",
+            t: "Coleção Afya Atlas",
+            linkNames: ["Coleção Afya Atlas"],
           },
           fitness: {
             k: "Fitness / Desempenho",
@@ -2186,11 +2233,16 @@
             t: "Barbearia e Cabelo",
             linkNames: ["Coleção Barbearia e Cabelo"],
           },
+          auto: {
+            k: "Automóveis / Mobilidade",
+            d: "Experiências para reparação, detalhamento, diagnóstico e cuidados diários com veículos.",
+            t: "Auto e Detalhamento",
+            linkNames: ["Coleção de Auto e Detalhamento"],
+          },
           pipeline: {
             k: "Próximas coleções",
             d: "Trilhas reservadas para as próximas famílias multipropósito.",
             names: [
-              "Auto e Mobilidade",
               "Eventos e Casamentos",
               "Estúdios de Fotografia",
               "Veterinária e Pets",
@@ -2215,9 +2267,9 @@
           },
           health: {
             k: "Afya / Ustawi",
-            d: "Vitalis huunganisha tiba ya familia, huduma za meno, meno ya watoto, urembo wa meno na orthodontiki.",
-            t: "Mkusanyiko wa Vitalis",
-            linkNames: ["Mkusanyiko wa Vitalis"],
+            d: "Afya Atlas huunganisha tiba ya familia, huduma za meno, meno ya watoto, urembo wa meno na orthodontiki.",
+            t: "Mkusanyiko wa Afya Atlas",
+            linkNames: ["Mkusanyiko wa Afya Atlas"],
           },
           fitness: {
             k: "Mazoezi / Utendaji",
@@ -2243,11 +2295,16 @@
             t: "Vinyozi na Nywele",
             linkNames: ["Mkusanyiko wa Vinyozi na Nywele"],
           },
+          auto: {
+            k: "Magari / Usafiri",
+            d: "Mifumo ya ukarabati, usafishaji wa kina, uchunguzi na utunzaji wa magari.",
+            t: "Matengenezo na Usafishaji wa Magari",
+            linkNames: ["Mkusanyiko wa Matengenezo ya Magari"],
+          },
           pipeline: {
             k: "Miradi Ijayo",
             d: "Njia zilizohifadhiwa kwa familia zijazo za mikusanyiko.",
             names: [
-              "Magari na Usafiri",
               "Matukio na Harusi",
               "Studio za Picha",
               "Mifugo na Wanyama",
@@ -2272,9 +2329,9 @@
           },
           health: {
             k: "الصحة / العافية",
-            d: "تجمع Vitalis طب الأسرة وطب الأسنان العام وأسنان الأطفال وطب الأسنان التجميلي وتقويم الأسنان.",
-            t: "مجموعة Vitalis",
-            linkNames: ["مجموعة Vitalis"],
+            d: "تجمع Afya Atlas طب الأسرة وطب الأسنان العام وأسنان الأطفال وطب الأسنان التجميلي وتقويم الأسنان.",
+            t: "مجموعة Afya Atlas",
+            linkNames: ["مجموعة Afya Atlas"],
           },
           fitness: {
             k: "اللياقة / الأداء",
@@ -2300,11 +2357,16 @@
             t: "الحلاقة والشعر",
             linkNames: ["مجموعة الحلاقة والشعر"],
           },
+          auto: {
+            k: "السيارات / التنقل",
+            d: "تجارب لإصلاح السيارات والعناية بها وتشخيصها وصيانتها اليومية.",
+            t: "إصلاح السيارات والعناية بها",
+            linkNames: ["مجموعة إصلاح السيارات والعناية بها"],
+          },
           pipeline: {
             k: "المشاريع القادمة",
             d: "مسارات محجوزة لعائلات المجموعات متعددة الاستخدامات القادمة.",
             names: [
-              "السيارات والتنقل",
               "الفعاليات والأعراس",
               "استوديوهات التصوير",
               "الطب البيطري والحيوانات",
@@ -2329,9 +2391,9 @@
           },
           health: {
             k: "医疗 / 康养",
-            d: "Vitalis 汇集家庭医疗、普通牙科、儿童牙科、美容牙科与正畸服务。",
-            t: "Vitalis 系列",
-            linkNames: ["Vitalis 系列"],
+            d: "Afya Atlas 汇集家庭医疗、普通牙科、儿童牙科、美容牙科与正畸服务。",
+            t: "Afya Atlas 系列",
+            linkNames: ["Afya Atlas 系列"],
           },
           fitness: {
             k: "健身 / 表现",
@@ -2357,11 +2419,16 @@
             t: "理发与发型",
             linkNames: ["理发与发型系列"],
           },
+          auto: {
+            k: "汽车 / 出行",
+            d: "涵盖维修、精洗、诊断与日常养护的汽车服务体验。",
+            t: "汽车维修与美容",
+            linkNames: ["汽车维修与美容系列"],
+          },
           pipeline: {
             k: "后续系列",
             d: "为下一批多用途系列保留的制作方向。",
             names: [
-              "汽车与出行",
               "活动与婚礼",
               "摄影工作室",
               "兽医与宠物",
