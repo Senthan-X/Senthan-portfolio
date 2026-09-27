@@ -22,7 +22,7 @@
     />
     <meta
       property="og:description"
-      content="Explore eight live template collection gateways spanning commerce, property, healthcare, fitness, hospitality, legal, grooming and automotive."
+      content="Explore nine live template collection gateways spanning commerce, property, healthcare, fitness, hospitality, legal, grooming, automotive and cafés."
     />
     <meta property="og:url" content="https://senthan.work/" />
     <meta
@@ -40,7 +40,7 @@
     />
     <meta
       name="twitter:description"
-      content="Eight live template collections, one full-stack practice."
+      content="Nine live template collections, one full-stack practice."
     />
     <meta
       name="twitter:image"
@@ -831,6 +831,13 @@
               </button
               ><button
                 class="filter"
+                data-filter="cafe"
+                data-i18n="filterCafe"
+              >
+                Café
+              </button
+              ><button
+                class="filter"
                 data-filter="pipeline"
                 data-i18n="filterPipeline"
               >
@@ -1146,6 +1153,21 @@
         },
         {
           n: "09",
+          sector: "cafe",
+          k: "Hospitality / Café",
+          t: "Café",
+          d: "Five distinct café concepts shaped around coffee, food, listening and community.",
+          count: 5,
+          statusKey: "readyLabel",
+          p: [[
+            "Café Collection",
+            "Explore the complete café collection",
+            "https://senthan-x.github.io/Cafe/",
+            "Collection",
+          ]],
+        },
+        {
+          n: "10",
           sector: "pipeline",
           k: "Portfolio Pipeline",
           t: "Next Collections",
@@ -1291,6 +1313,7 @@
           filterLegal: "Legal",
           filterGrooming: "Grooming",
           filterAuto: "Auto & Mobility",
+          filterCafe: "Café",
           filterPipeline: "In development",
           practiceTitle: "A premium system.<br>Applied consistently.",
           quote: "“Strategy first. Craft throughout. No borrowed personality.”",
@@ -1377,6 +1400,7 @@
           filterLegal: "Juridique",
           filterGrooming: "Grooming",
           filterAuto: "Auto & Mobilité",
+          filterCafe: "Café",
           filterPipeline: "En développement",
           practiceTitle: "Un système premium.<br>Appliqué avec cohérence.",
           quote:
@@ -1464,6 +1488,7 @@
           filterLegal: "Legal",
           filterGrooming: "Grooming",
           filterAuto: "Auto y Movilidad",
+          filterCafe: "Café",
           filterPipeline: "En desarrollo",
           practiceTitle: "Un sistema premium.<br>Aplicado con coherencia.",
           quote: "«Estrategia primero. Cuidado en todo. Personalidad propia.»",
@@ -1550,6 +1575,7 @@
           filterLegal: "Recht",
           filterGrooming: "Pflege",
           filterAuto: "Auto & Mobilität",
+          filterCafe: "Café",
           filterPipeline: "In Entwicklung",
           practiceTitle: "Ein Premium-System.<br>Konsequent angewandt.",
           quote: "„Strategie zuerst. Sorgfalt überall. Eigene Persönlichkeit.“",
@@ -1635,6 +1661,7 @@
           filterLegal: "Jurídico",
           filterGrooming: "Cuidados",
           filterAuto: "Automóveis e Mobilidade",
+          filterCafe: "Café",
           filterPipeline: "Em desenvolvimento",
           practiceTitle: "Um sistema premium.<br>Aplicado com consistência.",
           quote:
@@ -1722,6 +1749,7 @@
           filterLegal: "Sheria",
           filterGrooming: "Urembo",
           filterAuto: "Magari na Usafiri",
+          filterCafe: "Kahawa",
           filterPipeline: "Inaendelezwa",
           practiceTitle: "Mfumo wa kiwango cha juu.<br>Ukitumika kwa uthabiti.",
           quote: "“Mkakati kwanza. Ufundi kila hatua. Utambulisho wa kipekee.”",
@@ -1807,6 +1835,7 @@
           filterLegal: "القانون",
           filterGrooming: "العناية",
           filterAuto: "السيارات والتنقل",
+          filterCafe: "المقاهي",
           filterPipeline: "قيد التطوير",
           practiceTitle: "نظام متميز.<br>يُطبّق باتساق.",
           quote: "«الاستراتيجية أولاً، والحرفية في كل خطوة، وهوية أصيلة.»",
@@ -1888,6 +1917,7 @@
           filterLegal: "法律",
           filterGrooming: "护理",
           filterAuto: "汽车与出行",
+          filterCafe: "咖啡馆",
           filterPipeline: "开发中",
           practiceTitle: "高端系统。<br>始终一致。",
           quote: "“战略先行，匠心贯穿，保持独特。”",
@@ -1992,6 +2022,12 @@
             t: "Auto Repair & Detailing",
             linkNames: ["Auto Repair & Detailing Collection"],
           },
+          cafe: {
+            k: "Hospitality / Café",
+            d: "Five café concepts spanning coffee, food, listening and neighborhood hospitality.",
+            t: "Café",
+            linkNames: ["Café Collection"],
+          },
           pipeline: {
             k: "Portfolio Pipeline",
             d: "Reserved production tracks for the next multipurpose collection families.",
@@ -2052,6 +2088,12 @@
             d: "Des expériences pour la réparation, le detailing, le diagnostic et l’entretien automobile.",
             t: "Auto & Réparation",
             linkNames: ["Collection Auto & Réparation"],
+          },
+          cafe: {
+            k: "Hospitalité / Café",
+            d: "Cinq concepts de café autour du café, de la cuisine, de l’écoute et de l’accueil local.",
+            t: "Café",
+            linkNames: ["Collection Café"],
           },
           pipeline: {
             k: "Pipeline du portfolio",
@@ -2115,6 +2157,12 @@
             t: "Auto y Detallado",
             linkNames: ["Colección de Auto y Detallado"],
           },
+          cafe: {
+            k: "Hospitalidad / Café",
+            d: "Cinco conceptos de cafetería que reúnen café, cocina, música y comunidad.",
+            t: "Café",
+            linkNames: ["Colección Café"],
+          },
           pipeline: {
             k: "Próximas colecciones",
             d: "Líneas reservadas para las próximas familias multipropósito.",
@@ -2176,6 +2224,12 @@
             d: "Auftritte für Reparatur, Fahrzeugpflege, Diagnose und den täglichen Fahrzeugbesitz.",
             t: "Auto & Fahrzeugpflege",
             linkNames: ["Auto-&-Fahrzeugpflege-Sammlung"],
+          },
+          cafe: {
+            k: "Gastgewerbe / Café",
+            d: "Fünf Café-Konzepte rund um Kaffee, Küche, Musik und Begegnung.",
+            t: "Café",
+            linkNames: ["Café-Sammlung"],
           },
           pipeline: {
             k: "Portfolio-Pipeline",
@@ -2239,6 +2293,12 @@
             t: "Auto e Detalhamento",
             linkNames: ["Coleção de Auto e Detalhamento"],
           },
+          cafe: {
+            k: "Hospitalidade / Café",
+            d: "Cinco conceitos de café que combinam café, gastronomia, música e comunidade.",
+            t: "Café",
+            linkNames: ["Coleção Café"],
+          },
           pipeline: {
             k: "Próximas coleções",
             d: "Trilhas reservadas para as próximas famílias multipropósito.",
@@ -2300,6 +2360,12 @@
             d: "Mifumo ya ukarabati, usafishaji wa kina, uchunguzi na utunzaji wa magari.",
             t: "Matengenezo na Usafishaji wa Magari",
             linkNames: ["Mkusanyiko wa Matengenezo ya Magari"],
+          },
+          cafe: {
+            k: "Ukarimu / Kahawa",
+            d: "Dhana tano za kahawa zinazoleta pamoja vinywaji, chakula, muziki na jumuiya.",
+            t: "Café",
+            linkNames: ["Mkusanyiko wa Café"],
           },
           pipeline: {
             k: "Miradi Ijayo",
@@ -2363,6 +2429,12 @@
             t: "إصلاح السيارات والعناية بها",
             linkNames: ["مجموعة إصلاح السيارات والعناية بها"],
           },
+          cafe: {
+            k: "الضيافة / المقاهي",
+            d: "خمسة مفاهيم للمقاهي تجمع القهوة والطعام والموسيقى وروح المجتمع.",
+            t: "Café",
+            linkNames: ["مجموعة Café"],
+          },
           pipeline: {
             k: "المشاريع القادمة",
             d: "مسارات محجوزة لعائلات المجموعات متعددة الاستخدامات القادمة.",
@@ -2424,6 +2496,12 @@
             d: "涵盖维修、精洗、诊断与日常养护的汽车服务体验。",
             t: "汽车维修与美容",
             linkNames: ["汽车维修与美容系列"],
+          },
+          cafe: {
+            k: "餐饮 / 咖啡馆",
+            d: "五种咖啡馆概念，融合咖啡、餐食、音乐与社区氛围。",
+            t: "Café",
+            linkNames: ["咖啡馆系列"],
           },
           pipeline: {
             k: "后续系列",
