@@ -16,8 +16,7 @@ The portfolio links to each collection gateway, where visitors can explore its i
 | Law Firm | 4 | [Open collection](https://senthan-x.github.io/senthan-law-templates/) |
 | Barbershop & Hair | 7 production themes | [Open collection](https://senthan-x.github.io/barbershop-templates/) |
 | Auto Repair & Detailing | 8 | [Open collection](https://senthan-x.github.io/auto-repair-and-detailing/) |
-
-The Café collection has five themes in its repository; its GitHub Pages gateway is not live yet, so it will be added to the portfolio after deployment is verified.
+| Café | 5 | [Open collection](https://senthan-x.github.io/Cafe/) |
 
 ## Portfolio experience
 
