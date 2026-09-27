@@ -1,38 +1,44 @@
-# Senthan & Co — Portfolio
+# Senthan & Co — Full-Stack Developer Portfolio
 
-The public portfolio for **Senthan & Co**, an independent HTML template studio.
+The public portfolio and collection directory for Senthan & Co, a full-stack development practice creating multilingual website templates and collection systems.
 
-## Direction
+## Live collections
 
-This repository will grow into the central showcase for the studio's website templates and selected digital work. The site is intentionally lightweight so it can be deployed directly as a static website.
+The portfolio links to each collection gateway, where visitors can explore its individual themes and demos.
 
-## Current work
+| Collection | Current themes | Gateway |
+|---|---:|---|
+| Boutique & Fashion | 8 | [Open collection](https://senthan-x.github.io/boutique-and-fashion-templates/) |
+| Real Estate | 11 | [Open collection](https://senthan-x.github.io/real-estate-templates/) |
+| Afya Atlas — Medical & Wellness | 11 current releases | [Open collection](https://senthan-x.github.io/medicare-and-wellness/) |
+| Fitness & Performance | 11 | [Open collection](https://senthan-x.github.io/senthan-fitness-templates/) |
+| Restaurant & Dining | 4 | [Open collection](https://senthan-x.github.io/senthan-dining-templates/) |
+| Law Firm | 4 | [Open collection](https://senthan-x.github.io/senthan-law-templates/) |
+| Barbershop & Hair | 7 production themes | [Open collection](https://senthan-x.github.io/barbershop-templates/) |
+| Auto Repair & Detailing | 8 | [Open collection](https://senthan-x.github.io/auto-repair-and-detailing/) |
 
-- Fitness templates
-- Law templates
-- Dining templates
-- Maison — boutique & fashion
-- Atelier — luxury fashion
-- ÉCLAT — contemporary fashion commerce
+The Café collection has five themes in its repository; its GitHub Pages gateway is not live yet, so it will be added to the portfolio after deployment is verified.
 
-Additional template categories will be added as they are completed.
+## Portfolio experience
+
+- The portfolio interface supports English, French, Spanish, German, Portuguese, Swahili, Arabic and Chinese.
+- Language selection follows the visitor’s browser language and can be changed on the page; Arabic uses right-to-left layout.
+- Light and dark themes, responsive layouts and collection filters are included.
+- Collection pages are the entry points for individual themes and demos.
 
 ## Build principles
 
 - Responsive, semantic HTML
-- Self-contained and portable templates
-- Dark/light theme support
-- Multilingual experiences where appropriate
-- Minimal dependencies
-- Presentation designed for real deployment
+- Full-stack development, from interface through server-side logic
+- Self-contained, portable themes with minimal dependencies
+- Light and dark themes
+- Multilingual experiences
+- Production-minded presentation and interaction
 
-## Deployment
+## Preview and domain
 
-The intended production workflow is:
-
-**GitHub → Cloudflare Pages → senthan.work**
-
-Changes pushed to the production branch can become the source for automated Cloudflare deployments.
+- [GitHub Pages portfolio](https://senthan-x.github.io/Senthan-portfolio/)
+- The custom domain, [senthan.work](https://senthan.work/), has not been connected yet.
 
 ## Credits
 
