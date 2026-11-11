@@ -14,12 +14,9 @@ function check(name, fn) {
   report.push('PASS ' + name);
 }
 function table(name) {
-  const line = html.split(/\r?\n/).find((value) => value.startsWith('var ' + name + ' = '));
-  assert.ok(line, name + ' table is present');
-  const json = line.slice(('var ' + name + ' = ').length)
-    .replace(/;\s*<\/script>\s*$/, '')
-    .replace(/;\s*$/, '');
-  return JSON.parse(json);
+  const source = html.split('var ' + name + ' = ', 2)[1];
+  assert.ok(source, name + ' table is present');
+  return JSON.parse(source.split(/;\s*(?:var \w+ = |<\/script>)/, 1)[0]);
 }
 const translations = table('I18N');
 const groups = table('GROUP_I18N');
@@ -109,7 +106,7 @@ check('Navigation anchors, link security, and required accessible controls', () 
     assert.ok(ids.has(id), 'Missing required control: ' + id);
   }
   assert.ok(/<html lang="en" dir="ltr">/.test(html));
-  assert.ok(html.includes("currentLang==='ar'?'rtl':'ltr'"), 'Arabic RTL handling missing');
+  assert.match(html, /\.dir\s*=\s*currentLang\s*===\s*'ar'\s*\?\s*'rtl'\s*:\s*'ltr'/, 'Arabic RTL handling missing');
   assert.ok(html.includes('class="skip"'), 'Skip navigation link missing');
 });
 
