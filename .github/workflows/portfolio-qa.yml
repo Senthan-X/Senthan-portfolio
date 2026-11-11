@@ -1,0 +1,15 @@
+name: Portfolio integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate portfolio, translations and links
+        run: node --test tests/portfolio.test.cjs

@@ -1,6 +1,6 @@
 # Senthan & Co — Portfolio & Collections
 
-An independent full-stack development portfolio and collection directory. The October 2026 redesign presents ten published collection gateways and 93 current templates with authentic desktop/mobile captures.
+An independent full-stack development portfolio and collection directory. The November 2026 production pass preserves ten published collection gateways and 93 current templates with authentic desktop/mobile captures.
 
 [Open the portfolio](https://senthan-x.github.io/Senthan-portfolio/)
 
@@ -30,6 +30,8 @@ Counts include the current releases listed by each gateway. Healthcare archives,
 - IntersectionObserver reveals with staggered timing, reduced-motion support, working mobile navigation and a Back-to-Top Button.
 - Collection links and readable English content remain available when JavaScript is disabled.
 - The main portfolio retains its previously approved Kampala location and WhatsApp contact. No email address appears on this page.
+- The only geographic origin mark in the main portfolio footer is a subtle `UG`; individual commercial templates remain origin-neutral.
+- A mobile preview shows its collection description, and reduced-motion Back-to-Top uses the standards-based `auto` scroll behavior.
 
 Studio imagery supports the portfolio setting; collection previews are authentic screenshots, not generated website mockups. Screenshots show the captured English interface; use each collection's controls for its live language and theme variants.
 
@@ -39,8 +41,12 @@ Events & Weddings, Photography Studios, Veterinary & Pet Care, and Spa & Wellnes
 
 ## Deployment
 
-GitHub Pages serves the repository root. index.html can also be deployed directly to a static host or opened offline. Existing assets remain for historical versions and social preview metadata; the page itself does not require those files.
+The canonical target is **https://senthan.work/**. The portfolio remains usable through its [GitHub Pages fallback](https://senthan-x.github.io/Senthan-portfolio/) while the custom-domain host is configured. The single `index.html` can be served from any static host or opened offline; image assets under `/assets/` provide social previews.
 
-The GitHub Pages URL is the verified portfolio address. Connecting senthan.work remains a separate domain configuration task.
+For **Cloudflare Pages**, connect `Senthan-X/Senthan-portfolio`, choose `main`, use a static deployment with no build command and the repository root as output, and attach `senthan.work` as the custom domain. Confirm DNS, TLS, redirect behaviour, and the deployed commit in Cloudflare; those external settings are not changed by this repository update. If using **GitHub Pages** as the actual host instead, configure its custom domain and Cloudflare DNS together; do not set up two conflicting origins for the same hostname.
+
+`robots.txt` and `sitemap.xml` are prepared for the root domain. The HTML uses domain-consistent canonical, Open Graph, image and structured-data URLs. The website's actual custom-domain availability requires an independent live check.
+
+Run repository checks with `node --test tests/portfolio.test.cjs`. GitHub Actions also runs these checks on pushes and pull requests.
 
 Built by **Senthan & Co**.
