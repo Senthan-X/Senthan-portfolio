@@ -42,9 +42,9 @@ Events & Weddings, Photography Studios, Veterinary & Pet Care, and Spa & Wellnes
 
 Production serves **https://senthan.work/**. The [GitHub Pages fallback](https://senthan-x.github.io/Senthan-portfolio/) is also available. Serve the repository root on a static host or open `index.html` offline. The `/assets/` directory includes the image used in social previews.
 
-For **Cloudflare Pages**, connect `Senthan-X/Senthan-portfolio`, choose `main`, use a static deployment with no build command and the repository root as output, and attach `senthan.work` as the custom domain. Confirm DNS, TLS, redirect behaviour, and the deployed commit in Cloudflare; those external settings are not changed by this repository update. If using **GitHub Pages** as the actual host instead, configure its custom domain and Cloudflare DNS together; do not set up two conflicting origins for the same hostname.
+Cloudflare Workers Builds is connected to `Senthan-X/Senthan-portfolio` as `senthan-portfolio`. The Wrangler configuration serves the static files from the repository root without a build step. `.assetsignore` limits the upload to the homepage, indexing files, stylesheet and image assets. GitHub Pages serves the fallback from `main`.
 
-`robots.txt` and `sitemap.xml` are prepared for the root domain. The HTML uses domain-consistent canonical, Open Graph, image and structured-data URLs. The website's actual custom-domain availability requires an independent live check.
+`robots.txt`, `sitemap.xml`, the canonical URL, social images and structured data use `senthan.work`.
 
 Run `node --test tests/portfolio.test.cjs` and `node scripts/audit-portfolio.mjs` to check the catalog, translations, accessibility markup, deployment files and inline scripts. GitHub Actions runs both checks on pull requests targeting `main`. See the [release checklist](docs/RELEASE_CHECKLIST.md) for the browser and live link results.
 
