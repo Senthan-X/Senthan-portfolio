@@ -47,6 +47,6 @@ For **Cloudflare Pages**, connect `Senthan-X/Senthan-portfolio`, choose `main`, 
 
 `robots.txt` and `sitemap.xml` are prepared for the root domain. The HTML uses domain-consistent canonical, Open Graph, image and structured-data URLs. The website's actual custom-domain availability requires an independent live check.
 
-Run repository checks with `node --test tests/portfolio.test.cjs`. GitHub Actions also runs these checks on pushes and pull requests.
+Run the existing test suite with `node --test tests/portfolio.test.cjs`, and run the extended dependency-free static audit with `node scripts/audit-portfolio.mjs`. GitHub Actions runs the checks on portfolio-branch pushes and pull requests. See the [release checklist](docs/RELEASE_CHECKLIST.md) for the browser, accessibility, collection-route and Cloudflare verification required before merging.
 
 Built by **Senthan & Co**.
