@@ -2,7 +2,7 @@
 
 An independent full-stack development portfolio and collection directory. The November 2026 production pass preserves ten published collection gateways and 93 current templates with authentic desktop/mobile captures.
 
-[Open the portfolio](https://senthan-x.github.io/Senthan-portfolio/)
+[Open the portfolio](https://senthan.work/)
 
 | Collection | Current templates | Gateway |
 |---|---:|---|
@@ -24,14 +24,13 @@ Counts include the current releases listed by each gateway. Healthcare archives,
 
 - One self-contained index.html, with inline CSS/JavaScript and Base64 WebP imagery. No fonts, scripts, styles or in-page media load from external services.
 - EN, ES, FR, DE, PT, AR, ZH and SW. All visible page copy, collection summaries, controls, accessible labels, counters and dates follow the selected language. Arabic uses RTL.
-- Language detection uses navigator.language, with validated saved preferences. Light/dark defaults follow prefers-color-scheme; storage failures are handled defensively.
+- The language picker shows each language by its own name. Language detection uses `navigator.language` until a visitor chooses a language. The theme follows `prefers-color-scheme` until a visitor chooses light or dark. Both controls work when storage is unavailable.
 - Every collection is shown initially. Filters narrow the grid without a Load More gate.
-- Collection screenshots are captured from the actual current source and optimized as WebP. The editorial closer-look dialog offers genuine desktop/mobile views, keyboard dismissal, focus return and collection navigation.
-- IntersectionObserver reveals with staggered timing, reduced-motion support, working mobile navigation and a Back-to-Top Button.
-- Collection links and readable English content remain available when JavaScript is disabled.
+- Collection screenshots are captured from the current gateways and optimized as WebP. The closer-look dialog keeps the desktop and mobile controls in its header and supports keyboard dismissal, focus return and collection navigation.
+- The mobile menu, skip link and Back-to-Top Button manage keyboard focus. Scroll reveals respect reduced-motion preferences.
+- With JavaScript disabled, the navigation, collection links and English portfolio remain usable.
 - The main portfolio retains its previously approved Kampala location and WhatsApp contact. No email address appears on this page.
 - The only geographic origin mark in the main portfolio footer is a subtle `UG`; individual commercial templates remain origin-neutral.
-- A mobile preview shows its collection description, and reduced-motion Back-to-Top uses the standards-based `auto` scroll behavior.
 
 Studio imagery supports the portfolio setting; collection previews are authentic screenshots, not generated website mockups. Screenshots show the captured English interface; use each collection's controls for its live language and theme variants.
 
@@ -41,12 +40,12 @@ Events & Weddings, Photography Studios, Veterinary & Pet Care, and Spa & Wellnes
 
 ## Deployment
 
-The canonical target is **https://senthan.work/**. The portfolio remains usable through its [GitHub Pages fallback](https://senthan-x.github.io/Senthan-portfolio/) while the custom-domain host is configured. The single `index.html` can be served from any static host or opened offline; image assets under `/assets/` provide social previews.
+Production serves **https://senthan.work/**. The [GitHub Pages fallback](https://senthan-x.github.io/Senthan-portfolio/) is also available. Serve the repository root on a static host or open `index.html` offline. The `/assets/` directory includes the image used in social previews.
 
-For **Cloudflare Pages**, connect `Senthan-X/Senthan-portfolio`, choose `main`, use a static deployment with no build command and the repository root as output, and attach `senthan.work` as the custom domain. Confirm DNS, TLS, redirect behaviour, and the deployed commit in Cloudflare; those external settings are not changed by this repository update. If using **GitHub Pages** as the actual host instead, configure its custom domain and Cloudflare DNS together; do not set up two conflicting origins for the same hostname.
+Cloudflare Workers Builds is connected to `Senthan-X/Senthan-portfolio` as `senthan-portfolio`. The Wrangler configuration serves the static files from the repository root without a build step. `.assetsignore` limits the upload to the homepage, indexing files, stylesheet and image assets. GitHub Pages serves the fallback from `main`.
 
-`robots.txt` and `sitemap.xml` are prepared for the root domain. The HTML uses domain-consistent canonical, Open Graph, image and structured-data URLs. The website's actual custom-domain availability requires an independent live check.
+`robots.txt`, `sitemap.xml`, the canonical URL, social images and structured data use `senthan.work`.
 
-Run repository checks with `node --test tests/portfolio.test.cjs`. GitHub Actions also runs these checks on pushes and pull requests.
+Run `node --test tests/portfolio.test.cjs` and `node scripts/audit-portfolio.mjs` to check the catalog, translations, accessibility markup, deployment files and inline scripts. GitHub Actions runs both checks on pull requests targeting `main`. See the [release checklist](docs/RELEASE_CHECKLIST.md) for the browser and live link results.
 
 Built by **Senthan & Co**.

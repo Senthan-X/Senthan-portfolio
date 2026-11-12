@@ -1,0 +1,27 @@
+name: Portfolio quality checks
+
+on:
+  push:
+    branches:
+      - main
+      - 'portfolio/**'
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  static-audit:
+    name: Validate portfolio source
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit HTML, translations, links and assets
+        run: node scripts/audit-portfolio.mjs
