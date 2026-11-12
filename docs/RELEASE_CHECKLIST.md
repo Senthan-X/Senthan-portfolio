@@ -26,4 +26,4 @@ The Portfolio integrity and Portfolio quality checks workflows run both suites o
 - [x] The canonical domain served `robots.txt`, `sitemap.xml` and the social preview WebP. A missing route returned HTTP 404.
 - [ ] After merging, compare the live HTML with the reviewed commit and smoke-test the homepage and collection preview.
 
-The `www.senthan.work` hostname returned NXDOMAIN. Browser review used the branch source served locally. Cloudflare dashboard settings and a hosted branch preview remain unverified.
+The `www.senthan.work` hostname returned NXDOMAIN during the audit. The initial browser review used the branch source served locally. The Workers Builds check on the pull request records the hosted preview result.
